@@ -9,8 +9,7 @@ export function GraphaBar(props: GraphaBarType) {
     <div className="flex items-center flex-col h-44 w-14 justify-end transition-all gap-2 group ">
       <div
         id="mon_amt"
-        className=" value bg-stone-800 items-center justify-center rounded-sm h-6 w-full text-white  group-hover:flex hover:bg-rose-400 "
-      >
+        className=" value bg-stone-800 items-center justify-center rounded-sm h-6 w-full text-white  group-hover:flex hidden">
         123
       </div>
       <div
