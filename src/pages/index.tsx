@@ -15,8 +15,8 @@ export default function Home() {
         <div className="contain2 bg-[hsl(33,100%,98%)] h-80 gap-2 justify-between rounded-xl flex flex-col p-4  text-yellow-950">
           <h1 className=" font-bold text-xl ">Spending - Last 7 days</h1>
           <div className="bardayval flex h-48 items-center text-sm text-center transition-all ">
-            {expenceData.map(({ amount, day }) => (
-              <GraphaBar currentDay={currentDay} amount={amount} day={day} />
+            {expenceData.map(({ amount, day },index) => (
+              <GraphaBar key={index} currentDay={currentDay} amount={amount} day={day} />
             ))}
           </div>
           <hr />
